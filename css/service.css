@@ -1,0 +1,39 @@
+/* supporting pages:
+  - service.html
+*/
+
+.text-row {
+  display: inline-block;
+  width: 64%;
+}
+@media screen and (max-width: 988px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+.img-row {
+  vertical-align: top;
+  width: 20%;
+  display: inline-block;
+}
+.img-row img {
+  width: 100%;
+}
+.service {
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  padding: 0 15px !important;
+  margin: 0 10px 10px 10px;
+  transition: all 0.3s;
+}
+.service:hover {
+  background-color: rgb(0, 175, 228);
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.service-row {
+  margin: 0 !important;
+}

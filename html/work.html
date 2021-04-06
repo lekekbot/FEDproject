@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>S.P.Q.R - Our Work</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="container-fluid px-0 content-nav">
+        <div class="float-left lelogo">
+            <a class="navbar-brand desk-logo" href="index.html"><img src="../img/logo.png" alt="logo"></a>
+
+        </div>
+        <div class="topnav mb-1">
+            <a href="mailto:company@company.com" class="pr-5">Email: company@company.com</a>
+            <a href="tel:+6512345678" class="pr-5">Tel: +65 12345678 </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <a href="index.html" class="scroll-logo"><img src="../img/logo.png" alt="logo"></a>
+
+            <div class="navbar-left">
+                <a class="navbar-brand moblogo" href="index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar-right">
+                <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse desktop-nav " id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  navaref dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle" id="navbar-service-dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-service-dropdown">
+                            <a class="dropdown-item" href="uiux.html">UI/UX Design</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="serverhost.html">Server Hosting</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="mobapp.html">Mobile App Development</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="ecommerce.html">E-Commerce</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navaref active"><a href="work.html" class="nav-link">Our Work</a></li>
+
+                    <li class="nav-item  navaref dropdown ">
+                        <a href="about.html" class="nav-link dropdown-toggle" id="navbar-about-dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-about-dropdown">
+                            <a class="dropdown-item" href="career.html">Career</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navaref"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--end of navbar-->
+
+    <!--header-->
+    <div class="container-fluid text-center content-contact" style="margin-top: 75px">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1>Our Work</h1>
+        </div>
+    </div>
+    <!--end of header-->
+
+    <!-- content -->
+    <div class="container">
+        <div class="row imagetiles">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="work-table">
+                    <div style="overflow: hidden;">
+                        <img src="../img/manhang.PNG" alt="Hangman">
+                    </div>
+                    <p>Hangman game running on website</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="work-table">
+                    <div style="overflow: hidden;">
+                        <img src="../img/portfolio1.PNG" alt="Hotel">
+                    </div>
+                    <p>Hotel Booking Website</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="work-table">
+                    <div style="overflow: hidden;">
+                        <img src="../img/portfolio2.PNG" alt="Pizza">
+                    </div>
+                    <p>Pizza Delivery Website</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="work-table">
+                    <div style="overflow: hidden;">
+                        <img src="../img/caloriecalc.jpeg" alt="calories calculator">
+                    </div>
+                    <p>Calorie Calculator App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="work-modal">
+        <div class="modal-content">
+            <span class="mob-close">Click outside the box to exit</span>
+            <h3 id="modal-title"></h3>
+            <div class="md-img-p">
+                <img id="modal-img" alt="modal-img">
+            </div>
+            <div class="md-txt-p">
+                <div id="modal-text"></div>
+            </div>
+            <span class="eksdee">&times;</span>
+
+        </div>
+    </div>
+    <!-- end of content -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <h5>S.P.Q.R</h5>
+                    <p>S.P.Q.R is a software development company that provides web development, mobile app
+                        development
+                        as well as server hosting.</p>
+                    <p>&copy; 2020 | S.P.Q.R</p>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>SERVICES</H5>
+                    <ul>
+                        <li><a href="uiux.html">UI/UX Design</a></li>
+                        <li><a href="serverhost.html">Server Hosting</a></li>
+                        <li><a href="mobapp.html">Mobile App Development</a></li>
+                        <li><a href="ecommerce.html">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>ABOUT</H5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="career.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>CONTACT US</H5>
+                    <ul>
+                        <li><a href="mailto:company@company.com">company@company.com</a></li>
+                        <li><a href="tel:+6512345678">+65 12345678</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js scripts -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <!--end of  js scripts -->
+
+    <!-- page specific script -->
+    <script src="../js/work.js"></script>
+</body>
+
+</html>

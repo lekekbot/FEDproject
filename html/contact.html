@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>S.P.Q.R - Contact Us</title>
+</head>
+
+<body>
+     <!--navbar-->
+     <div class="container-fluid px-0 content-nav">
+        <div class="float-left lelogo">
+            <a class="navbar-brand desk-logo" href="index.html"><img src="../img/logo.png" alt="logo"></a>
+
+        </div>
+        <div class="topnav mb-1">
+            <a href="mailto:company@company.com" class="pr-5">Email: company@company.com</a>
+            <a href="tel:+6512345678" class="pr-5">Tel: +65 12345678 </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <a href="index.html" class="scroll-logo"><img src="../img/logo.png" alt="logo"></a>
+
+            <div class="navbar-left">
+                <a class="navbar-brand moblogo" href="index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar-right">
+                <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse desktop-nav" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  navaref dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle" id="navbar-service-dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-service-dropdown">
+                            <a class="dropdown-item" href="uiux.html">UI/UX Design</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="serverhost.html">Server Hosting</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="mobapp.html">Mobile App Development</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="ecommerce.html">E-Commerce</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navaref"><a href="work.html" class="nav-link">Our Work</a></li>
+
+                    <li class="nav-item  navaref dropdown ">
+                        <a href="about.html" class="nav-link dropdown-toggle" id="navbar-about-dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-about-dropdown">
+                            <a class="dropdown-item" href="career.html">Career</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navaref active"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--end of navbar-->
+
+    <!-- content -->
+    <!-- hero image -->
+    <div class="container-fluid text-center content-contact" style="margin-top: 75px">
+        <div class="jumbotron jumbotron-fluid text-center contact-hero">
+            <h1>Contact Us</h1>
+        </div>
+        <!-- buttons to change the forms -->
+        <div class="col text-center"><button type="button" id="reqbtn" onclick="req()"
+                class="btn btn-lg btn-outline-success" value="Submit Request">Submit Request</button>
+            <button type="button" id="meetbtn" onclick="meet()" class="btn btn-lg btn-outline-danger"
+                value="Schedule a Meeting">Schedule A Meeting</button>
+        </div>
+        <!-- form -->
+        <div class="row" style="margin: 0;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 forms pb-5 mt-3">
+                <div id="form" class="form mt-5">
+                    <form>
+                        <!-- name  -->
+                        <div class="name-form form-group">
+                            <input type="text" class="form-control" name="name" id="name" autocomplete="off" required>
+                            <label for="name" class="label-name"><span class="content-name">Your Name</span></label>
+                        </div>
+                        <!-- email -->
+                        <div class="email-form form-group" id="email-form">
+                            <input type="email" class="form-control" name="email" id="email" autocomplete="off"
+                                required>
+                            <label for="email" class="label-email"><span class="content-email" id="content-email">Your
+                                    Email</span></label>
+                        </div>
+                        <!-- service required -->
+                        <div class=" form-check service-form">
+                            <h5>Services Needed:</h5>
+                            <p>Leave blank if you're not looking for any services</p>
+                            <div class="service-row">
+                                <div class=" form-check form-check-inline">
+                                    <input type="checkbox" id="uiux" name="uiux" value="UI/UX Designing" class="chkbox">
+                                    <label class="form-check-label" for="uiux">UI/UX Designing</label>
+                                </div>
+                                <div class=" form-check form-check-inline">
+                                    <input type="checkbox" id="server" name="server" value="Server Hosting"
+                                        class="chkbox">
+                                    <label class="form-check-label" for="server">Server Hosting</label>
+                                </div>
+                            </div>
+                            <div class="service-row">
+                                <div class=" form-check form-check-inline">
+                                    <input type="checkbox" id="mobapp" name="mobapp" value="Mobile App Development"
+                                        class="chkbox">
+                                    <label class="form-check-label" for="mobapp">Mobile App Development</label>
+                                </div>
+                                <div class=" form-check form-check-inline">
+                                    <input type="checkbox" id="ecommerce" name="ecommerce" value="E-Commerce"
+                                        class="chkbox">
+                                    <label class="form-check-label" for="ecommerce">E-Commerce</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- message -->
+                        <div class="txtarea-form">
+                            <textarea name="message" class="form-control" id="txtarea" required
+                                maxlength="2000"></textarea>
+                            <p id="char-max">Characters: 0/2000</p>
+                        </div>
+                        <div class="sub-btn mt-2"><button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- end of form -->
+            </div>
+            <!-- schedule a meeting -->
+            <div id="meeting" class="meeting mt-5">
+                <h1>Due to the recent Coronavirus pandemic, this feature will not be used till further notice.</h1>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <!-- contact information -->
+        <div class="col-md-8 pt-3 text-center" style="margin: 0 auto">
+            <h3>Contact Info</h3>
+            <div class="row">
+                <div class="col-sm-4"><img class="img-icon" src="../img/call.png" alt="call">+65 12345678</div>
+                <div class="col-sm-4"><img class="img-icon" src="../img/email.png" alt="email">Company@company.com</div>
+                <div class="col-sm-4"><img class="img-icon" src="../img/locate.png" alt="location">1600 Pennsylvania
+                    Avenue NW,
+                    Washington,<br> DC 20500, United States</div>
+            </div>
+        </div>
+        <!-- google map's iframe -->
+        <div class="maps col-md-8 mt-4 p-0"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1503819264835!2d-77.03871848479086!3d38.8976762795706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2ssg!4v1594568981819!5m2!1sen!2ssg"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal-p">
+        <div class="modal-c">
+            <h3 class="modal-title">Confirm to submit?</h3>
+            <p class="modal-line">We Recommend you to double check your credentials before clicking submit.</p>
+            <span class="close" draggable="true">&times;</span>
+            <p class="modal-name"></p>
+            <p class="modal-email"></p>
+            <p class="modal-service"></p>
+            <p class="modal-msg"></p>
+            <div style="text-align:right;">
+                <button type="button" value="Submit" class="btn btn-success" onclick="send()">Confirm</button>
+                <button type="button" value="Cancel" class="btn btn-danger" onclick="cancel()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- alert box -->
+    <div class="alertbox">
+        Success! Your message has been sent
+        <div class="close-btn">
+            <div class="leftright"></div>
+            <div class="rightleft"></div>
+        </div>
+    </div>
+    <!-- end of alert box -->
+    <!-- end of content -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <h5>S.P.Q.R</h5>
+                    <p>S.P.Q.R is a software development company that provides web development, mobile app
+                        development
+                        as well as server hosting.</p>
+                    <p>&copy; 2020 | S.P.Q.R</p>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>SERVICES</H5>
+                    <ul>
+                        <li><a href="uiux.html">UI/UX Design</a></li>
+                        <li><a href="serverhost.html">Server Hosting</a></li>
+                        <li><a href="mobapp.html">Mobile App Development</a></li>
+                        <li><a href="ecommerce.html">E-Commerce</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>ABOUT</H5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="career.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-4 col-lg-2 footerz">
+                    <H5>CONTACT US</H5>
+                    <ul>
+                        <li><a href="mailto:company@company.com">company@company.com</a></li>
+                        <li><a href="tel:+6512345678">+65 12345678</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js scripts -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- page exclusive js scripts -->
+    <script src="../js/resize.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>

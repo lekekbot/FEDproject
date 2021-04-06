@@ -1,0 +1,61 @@
+/* supporting pages:
+  - uiux.html
+  - ecommerce.html
+  - serverhost.html
+  - mobapp.html
+*/
+
+.title-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-col {
+  background-color: rgba(72, 255, 255, 0.767);
+  height: 100%;
+  padding: 20px;
+}
+
+/*server hosting*/
+.server-col {
+  background-color: rgba(200, 255, 174, 0.767);
+  height: 100%;
+  padding: 20px;
+}
+.server-col h5 {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+.server-col ul {
+  padding: 0;
+  list-style-type: none;
+}
+.server-col ul li {
+  text-align: center;
+}
+/*end of server hosting*/
+
+/*contact button*/
+.contact-btn {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background: white;
+  transition: all 0.4s ease-in;
+}
+.contact-btn:hover {
+  text-decoration: none;
+  background-color: rgb(193, 255, 77);
+  border-color: rgb(193, 255, 77);
+  color: white;
+}
+.build {
+  margin-bottom: 30px;
+}

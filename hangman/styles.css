@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+.lettering td{
+	border-collapse: collapse;	
+}
+#score, #fails, #msg, #hangman, #time{
+	cursor: not-allowed;
+}
+#instructionbtn{
+	cursor:help;
+}
+#hangman{
+	letter-spacing: 2px;
+}
+.lettering td input{
+	outline: none;
+	border: none;
+	box-shadow: 4px 2px 4px 0 #888888;
+	width:57px;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 20px;
+	font-weight:lighter; 
+	padding: 15px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background-color: aquamarine;
+	border-radius:  9px;
+}
+.lettering td input:hover{
+	color: #fff;
+	background-color: lawngreen;
+}
+.lettering td input:active{
+	outline: 0;
+	box-shadow: none !important;
+}
+
+body{
+	background-color:#f8ecb1;
+	}
+tbody{
+	 border: none;
+	 background-color: #F8ECB1;
+}
+.lettering td{
+	background-color: #F8ECB1;
+	border: none;
+}
+.lettering td input:hover{
+	color: #fff;
+	background-color: lawngreen;
+}
+.lettering td input:disabled{
+	cursor: not-allowed;
+	background-color: black;
+	color:black;
+}
+#container{
+	background-color:none;	
+}
+#dedguy{
+	transition: all 0.6s ease;
+}
+#startbtn{
+	border: none;
+	outline:none;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: red;
+	color:white;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+#startbtn:active{
+	outline: 0;
+}
+#startbtn:disabled{
+	background-color: #AB3F41;
+	color: black;
+	cursor: not-allowed;
+}
+#startbtn:hover{
+	background-color:salmon;
+	color: black;
+}
+#resetbtn:disabled{
+	background-color: grey;
+	cursor: not-allowed;
+}
+
+#resetbtn{
+	cursor: pointer;
+	font-size: 15px;
+	border: none;
+	border-radius: 2px;
+	outline: none;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: 600;
+	padding: 10px 15px;
+	transition: all 0.4s ease;
+	color: black;
+	background-color: white;
+}
+
+#resetbtn:hover{
+	color: white;
+	background-color:black;
+}
+
+#instructionbtn{
+	color:white;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	background-color: #6C6C6C;
+	box-shadow: 4px 2px 4px 0 #888888;
+	padding: 15px 15px;
+	outline: none;
+	border-radius: 0px;
+	border:0;
+	transition: all 0.2s ease;
+}
+#instructionbtn:hover{
+	background-color: black;
+	border-radius:  25px;
+	box-shadow: none;
+}
+
+#instructionbtn:active{
+	background-color: #333333;
+}

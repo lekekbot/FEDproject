@@ -1,0 +1,89 @@
+/* supporting pages:
+    - index.html
+*/
+
+/* carousel */
+.carousel-inner img {
+  width: 100%;
+}
+@media screen and (max-width: 780px) {
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
+.carousel-inner {
+  max-height: 400px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: #000;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: white;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: white;
+}
+
+/* notable awards */
+.notable-img{
+  width: 255px;
+}
+/* award img */
+.awardimg {
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.awardimg img {
+  margin-left: 35px;
+}
+
+/* get started */
+.started {
+  background-color: #66bfff;
+  padding: 50px 0;
+  display: block;
+}
+
+.contactbtn {
+  font-size: 2rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 2rem;
+}
+.contactbtn:hover {
+  text-decoration: none;
+  background-color: lightblue;
+}
+
+/* media query */
+@media screen and (max-width: 767px) {
+  .bgimg {
+    display: none;
+  }
+  .awardimg img {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

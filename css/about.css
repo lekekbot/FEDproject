@@ -1,0 +1,60 @@
+/* supporting pages:
+  - about.html
+*/
+
+.about-hero {
+  position: relative;
+  z-index: 0;
+}
+
+.about-img{
+  width: 100%;
+}
+
+.about-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("../img/aboutus.png");
+  background-position: 0% 30%;
+  background-size: cover;
+  opacity: 0.5;
+}
+.about-content {
+  margin: 0;
+}
+.about-hero h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* awards */
+.award {
+  justify-content: center;
+}
+.award div {
+  margin-top: 1rem;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+  .about-content img {
+    display: none;
+  }
+}
+.mobile-award {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .award {
+    display: none;
+  }
+  .mobile-award {
+    display: block;
+  }
+}

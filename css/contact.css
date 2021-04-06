@@ -1,0 +1,339 @@
+/* supporting pages:
+  - contact.html
+*/
+
+/* hero iamge */
+.contact-hero {
+  z-index: 0;
+  position: relative;
+}
+
+.contact-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("../img/contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  filter: blur(5px);
+}
+.contact-hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 50px;
+}
+
+/*button*/
+#reqbtn,
+#meetbtn {
+  outline: none;
+}
+#meeting {
+  display: none;
+}
+
+/*forms*/
+.forms,
+form,
+#name,
+#email {
+  background-color: #ebf7fd;
+  color: black;
+}
+.name-form,
+.email-form {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.name-form input,
+.email-form input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+.name-form label,
+.email-form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.name-form label::after,
+.email-form label::after {
+  content: "";
+  left: 0;
+  bottom: -1px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgb(22, 148, 11);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name,
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.name-form input:focus + .label-name .content-name,
+.name-form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: rgb(204, 133, 1);
+}
+
+.name-form input:focus + .label-name::after,
+.email-form input:focus + .label-email::after {
+  transform: translateX(0%);
+}
+#submitbtn {
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: 4px solid white;
+  font-size: 20px;
+}
+.email-form {
+  height: 65px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+#char-max {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+#txtarea {
+  border: 1px solid black;
+  resize: none;
+  margin: 0px auto;
+  display: block;
+  width: 50%;
+  outline: none;
+  height: 75px;
+  font-size: 14px;
+  background-color: #ebf7fd;
+}
+.label-msg {
+  width: 50%;
+  text-align: left;
+}
+.sub-btn {
+  margin: 0 auto;
+  width: 50%;
+  text-align: right;
+}
+.service-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+.service-row {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.service-form h5,
+.service-form p {
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1100px) {
+  .name-form,
+  .email-form,
+  #txtarea,
+  #char-max,
+  .sub-btn,
+  .service-form {
+    width: 75%;
+  }
+}
+
+/* contact info */
+.contact-info {
+  display: inline-block;
+}
+.content-contact {
+  padding: 0 !important;
+}
+.img-icon {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+/* google map's iframe */
+.maps {
+  margin: 0 auto !important;
+}
+.maps iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+/*modal*/
+.modal-p {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.modal-c {
+  background-color: #fff;
+  width: 70%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  position: relative;
+  animation: 0.7s drop;
+}
+.modal-title {
+  text-align: center;
+}
+.modal-line {
+  margin-top: 15px;
+}
+.modal-msg {
+  overflow-y: auto;
+  max-height: 250px;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.content-contact,
+.content-nav {
+  transition: 0.5s;
+}
+
+/*alert box*/
+.alertbox {
+  z-index: 999;
+  display: none;
+  position: fixed;
+  top: 30px;
+  background-color: green;
+  color: white;
+  left: 50%;
+  font-size: 17px;
+  transform: translate(-50%);
+  padding: 15px 45px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2px;
+  right: -14px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.leftright {
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.rightleft {
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: white;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+.close-btn:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #f25c66;
+}
+.close-btn:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #f25c66;
+}
+.close-btn:hover label {
+  opacity: 1;
+}
+
+/* alertbox media queries */
+@media screen and (max-width: 735px) {
+  .alertbox {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 369px) {
+  .alertbox {
+    white-space: normal;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*animation keyframes*/
+
+/*keyframe for modal*/
+@keyframes drop {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+/*keyframes for alert*/
+@keyframes alertdrop {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/*keyframes for alert*/
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
